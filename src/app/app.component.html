@@ -1,0 +1,48 @@
+<div class="mainbox"> 
+ 
+  <div class="sub_box">
+    <h1> Simple Form </h1>
+    <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+      <input type = "text" name = "fullName" placeholder = "Your full name" ngModel>  
+      <br><br>
+    
+      <input type = "email" name = "email" placeholder = "Your email" ngModel>
+      <br><br>
+    
+      <input type="checkbox" name = "isprivate" ngModel >Public<br><br>
+      
+      <input type = "submit" value = "Send"> 
+    </form>
+  </div>
+
+
+  <div class="sub_box">
+    <h1> Display Data </h1>
+<table>
+
+    <tr>
+      <th>
+        Full Name
+      </th>
+      <th>
+        Email
+      </th>
+    </tr>
+    <tr>
+      <td>
+  {{name}}
+      </td>
+      <td>
+        <div *ngIf='private'>
+          {{email}}
+        </div>
+  
+  
+      </td>
+    </tr>
+  </table>
+  </div>
+
+  
+  
+</div>
