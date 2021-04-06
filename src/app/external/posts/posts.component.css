@@ -1,0 +1,83 @@
+.img{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.head{
+    margin-left: 10px;
+}
+.img2{
+
+    height: 250px;
+    width: 400px;
+}
+body{
+    background-color: rgb(240, 236, 236);
+    height: 100%;
+}
+.name{
+    margin-left: 15px;
+}
+.main{
+    align-items: center;
+}
+.post{
+    background-color: white;
+    border-radius: 20px;
+}
+.bt2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* display: flex; */
+    align-items: center;
+    overflow-x: hidden;
+}
+.bt{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(240, 236, 236);
+}
+
+.icons{
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.cap{
+    margin-top: 10px;
+    margin-left: 14px;
+}
+.editb{
+    background-color: white;
+    border: none;
+}
+.postc{
+    background-color: white;
+}
+.col-md-3{
+    padding: 20px;
+}
+.col-md-9{
+    padding: 30px;
+}
+.captiontext{
+    height: 70px;
+}
+.trash{
+    background-color: white;
+    color: red;
+    border: none;
+}

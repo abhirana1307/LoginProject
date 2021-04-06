@@ -1,0 +1,115 @@
+.loginBody {
+    color: #fff;
+    /* background-color: #bdb6b6; */
+    background-image: url('../../../assets/images/sample.jpg');
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.form-control {
+    font-size: 15px;
+    border-color: #e1e1e1;
+    border-radius: 3px;
+}
+.form-control:focus {
+    border-color: #e1e1e1;
+}
+.input-group-text {
+    border-color: #e1e1e1;
+}
+.btn {
+    border-radius: 3px;
+}
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.login-form form {
+    color: #999;
+    border-radius: 3px;
+   /* margin-bottom: 15px;
+    */
+    margin-top: 140px;
+    background: #fff;
+    box-shadow: 0px 2px 2px #000;
+    padding: 30px;
+}
+.login-form form a {
+    color: #1463a3;
+    text-decoration: none;
+}
+.login-form form a:hover {
+    text-decoration: underline;
+}
+.login-form h2 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 0;
+}
+.login-form hr {
+    margin: 0 -30px 20px;
+}
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+.login-form label {
+    font-weight: normal;
+    font-size: 15px;
+}
+.login-form .form-control {
+    min-height: 38px;
+    box-shadow: none !important;
+}
+.login-form .input-group-addon {
+    max-width: 42px;
+    text-align: center;
+}
+.login-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: #1463a3 !important;
+    border: none;
+    min-width: 140px;
+    margin-left: 200px;
+}
+.login-form .btn:active {
+    font-size: 16px;
+    font-weight: bold;
+    background: #1463a3 !important;
+    border: none;
+    min-width: 140px;
+}
+.login-form .btn:hover {
+    background: #1463a3 !important;
+}
+.login-form .btn:focus {
+    background: #1463a3 !important;
+}
+.login-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+.login-form a:hover {
+    text-decoration: none;
+}
+.login-form .fa {
+    font-size: 21px;
+}
+.login-form .fa-paper-plane {
+    font-size: 18px;
+}
+.login-form .fa-check {
+    color: #fff;
+    left: 17px;
+    top: 18px;
+    font-size: 7px;
+    position: absolute;
+}
+.login-form .foot {
+    color: black;
+    margin-left: 50px;
+}
+.login-form .col{
+    color: red;
+}

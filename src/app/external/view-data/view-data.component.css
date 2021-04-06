@@ -1,0 +1,43 @@
+thead{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+table{
+    margin-top: 20px;
+    padding: 10px;
+}
+.btn-success{
+    margin-top: 20px;
+}
+tr{
+    text-align: center;
+}
+.container{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.col-md-4{
+ padding: 40px;
+ background-color: rgb(141, 221, 117);
+}
+.col-md-8{
+    padding: 40px;
+    background-color:rgb(141, 221, 117);
+   }
+.bodypart{
+    padding: 20px;
+}
+.img{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+.btn-primary{
+    margin-top: 10px;
+}

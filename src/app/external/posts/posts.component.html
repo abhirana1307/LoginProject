@@ -1,0 +1,59 @@
+    <div class="bt">
+    <button type="button" class="btn btn-primary" (click)='onSubmit()'>View Posts</button>
+    <div class="form-group mx-sm-3 mb-2">
+      <input type="text" class="form-control" name="caption" placeholder="Edit caption" [(ngModel)]='caption'>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2" (click)="onSave()">Save</button>
+    </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <form [formGroup]='send' (ngSubmit)="onSend()">
+        <div class="form-group">
+          <input type="number" class="form-control"  placeholder="user id" formControlName="user_id">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control captiontext"  placeholder="Enter caption" formControlName="caption">
+        </div>
+        <div class="form-group">
+          <input type="file" class="form-control"  name="image" (change)="onFileUpload($event)">
+        </div>
+        <input type="submit" value="Save" class="btn btn-primary bt2">
+      </form>
+    </div>
+
+    <div class="col-md-9">
+  
+    <form class="main">
+        <table>
+            <tbody *ngFor='let data of dbdata'>
+                 <div class="post">
+                <tr class="head">
+                    <td><img src="http://localhost:9007/uploads/{{data.profile_pic}}" class="img"><span class="name">{{data.first_name}} {{data.last_name}}</span></td>                   
+                </tr>
+               <div class="cap"> 
+                 <tr><b>{{data.caption}}</b> 
+                   <button class="editb" (click)="onEdit(data,data.id)"><i class="fa fa-edit"></i></button>
+                 </tr></div>
+                  <tr>
+                  <img src="http://localhost:9007/uploads/{{data.picture}}" class="img2">
+                  </tr>
+              
+                <tr>
+                  <hr>
+                  <div class="icons">
+                  <div><i class="fa fa-thumbs-o-up"> likes</i></div>
+                  <div><i class="fa fa-comment"> Comments</i></div>
+                  <div><i class="fa fa-share-alt"> Shares</i></div>
+                  <div> <button class="trash" (click)="onDelete(data.id)"><i class="fa fa-trash"></i></button></div>
+                </div>
+                <hr>
+                </tr>  
+                <p></p>
+              </div>
+            </tbody>
+        </table>
+    </form>
+ </div>
+</div>
+</div>
