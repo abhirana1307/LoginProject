@@ -10,7 +10,7 @@ import { ViewDataComponent } from './external/view-data/view-data.component';
 
 
 const routes: Routes = [
-  {path: "", component: LoginComponent},
+  {path: "", redirectTo: "/login", pathMatch: 'full'},
   {path: "signup", component: SignupComponent},
   {path: "login", component: LoginComponent,},
   {path: "viewdata", component: ViewDataComponent},

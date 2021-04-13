@@ -5,15 +5,20 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { LayoutComponent } from './layout.component';
-import { HeaderComponent } from './header/header.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [DashboardComponent, MyProfileComponent, LayoutComponent, HeaderComponent, SideBarComponent],
+  declarations: [
+    DashboardComponent, 
+    MyProfileComponent, 
+    LayoutComponent, 
+  ],
+
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    SharedModule
   ]
 })
 export class LayoutModule { }

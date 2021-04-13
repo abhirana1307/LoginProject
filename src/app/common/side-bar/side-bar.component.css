@@ -1,0 +1,85 @@
+
+
+.a{
+	grid-column:1;
+	grid-row-start:1;
+	grid-row-end:20;
+}
+
+.sidebar{
+	width:252px;
+	height:1400px;
+	margin-left:0;
+	background:#292841;
+	position:fixed;
+}
+
+.sidebar .logo a{
+	display:block;
+}
+
+.sidebar .logo a svg{
+	width:260px;
+	height:100px;
+	margin-top:-12px;
+	margin-bottom:0;
+	margin-left:-10px;
+}
+
+.sidebar .menu ul{
+	list-style-type:none;
+}
+
+.sidebar .menu ul li a .fa .fa-fw .fas{
+	font-size:20px;
+	color:#A5A4BF;
+}
+
+.sidebar .menu ul li a svg{
+	width:14px;
+	height:14px;
+	color:#A5A4BF;
+}
+
+.sidebar .menu ul li{
+	margin-left:-50px;
+	width:260px;
+	height:53px;
+	background:#43425D;
+}
+
+.sidebar .menu ul li a{
+	text-decoration:none;
+	display:block;
+	margin-top:32px;
+	padding-top:17px;
+	padding-bottom:17px;
+	padding-right:100px;
+	padding-left:25px;
+	font-size:14px;
+	color:rgba(255, 255, 255, 0.6);
+}
+
+.sidebar .menu ul li a:hover{
+	color:#fff;
+}
+
+.sidebar .menu ul li a .product:hover{
+	color:#fff;
+}
+
+.sidebar .menu ul li.active{
+	color:whitesmoke !important;
+	font-weight:bold;
+	border-left:5px solid rgba(0, 0, 0, 0.1);
+	margin-left:-38px;
+	z-index:-1;
+	cursor:pointer;
+	width:250px;
+	display:block;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+	background-image:-webkit-linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+	background-image:-moz-linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+	background-image:-o-linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+

@@ -3,7 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import{FormGroup,FormControl,FormBuilder,Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { SearchCountryField, CountryISO} from 'ngx-intl-tel-input';
+import { Api } from 'src/app/core/api';
 import { constant } from 'src/app/core/const';
+import { HttpService } from 'src/app/core/services/http.service';
+import { UserService } from 'src/app/core/services/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -21,9 +24,10 @@ export class SignupComponent implements OnInit {
   valid=false;
 
   constructor(
-    private httpxy: HttpClient,
+    private http: HttpService,
     private fb:FormBuilder,
-    private router: Router
+    private router: Router,
+    private dataSharing: UserService
   ) {}
 
   ngOnInit(): void {
@@ -72,13 +76,14 @@ export class SignupComponent implements OnInit {
     // }
     if(!this.signup.invalid){
       console.log(this.signup.value);
-      this.httpxy.post('http://localhost:9007/register', this.signup.value).subscribe((res:any) =>{
+      this.http.postData(Api.apiPath.signup, this.signup.value).subscribe((res:any) =>{
         console.log(res);
         console.log(res.status);
         alert(res.message);
 
-
-       this.router.navigateByUrl('/layout');
+      localStorage.setItem('userLoginDetails', JSON.stringify(res));
+      this.router.navigateByUrl('/layout');
+      this.dataSharing.setData(res.data[0]);
 
       }, err => {
         console.log(err);

@@ -48,6 +48,8 @@ body{
     align-items: center;
     padding-top: 20px;
     background-color: rgb(240, 236, 236);
+    margin-left: 80px;
+    padding-left: 100px;
 }
 
 .icons{
@@ -81,3 +83,7 @@ body{
     color: red;
     border: none;
 }
+
+
+
+

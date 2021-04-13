@@ -21,7 +21,8 @@ export class LoginComponent implements OnInit {
     private http:HttpService,
     private fb:FormBuilder,
     private router: Router,
-    private userSer: UserService
+    private userSer: UserService,
+    private dataSharing: UserService
   ) {}
 
   ngOnInit(): void {
@@ -44,7 +45,11 @@ export class LoginComponent implements OnInit {
       this.http.postData(Api.apiPath.login, this.login.value).subscribe((res:any) => {
         alert(res.message);
         this.userSer.afterLogin(res.data);
-      })
+        this.dataSharing.setData(res.data[0]);
+      }, err => {
+        console.log(err);
+        alert(err.message);
+      });
       // this.httpy.post('http://localhost:9007/login', this.login.value).subscribe((res:any) => {
       //   console.log(res);
       //   alert(res.message);

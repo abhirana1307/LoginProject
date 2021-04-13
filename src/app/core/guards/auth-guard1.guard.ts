@@ -15,8 +15,10 @@ export class AuthGuard1Guard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       console.log('aaagya ')
       if(localStorage.getItem('userLoginDetails')) return true
-     
-      this.userService.logout()
+      else{
+        alert('Unauthorized access Redirect to Login Page');
+        this.userService.logout()
+      }
       return false;
   }
   

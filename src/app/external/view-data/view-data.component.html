@@ -37,7 +37,7 @@
     
     
                 
-                <td><img src="http://localhost:9007/uploads/{{data.profile_pic}}" class="img"></td>
+                <td><img src="http://localhost:9007/uploads/{{data.profile_pic}}" onerror="this.src='../../../assets/images/guest-user.jpg'" class="img"></td>
                 <td>{{data.first_name}}</td>
                 <td>{{data.last_name}}</td>
                 <td>{{data.email}}</td>

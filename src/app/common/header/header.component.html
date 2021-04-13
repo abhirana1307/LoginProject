@@ -1,0 +1,28 @@
+<div class="b">
+    <div class="container1">
+        <div class="box">
+            <ul>
+                <li class="search">
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search..." />
+                    </a>
+                </li>
+               
+                <li class="username">
+                    <a href="#">
+                        {{jsonData.first_name}} {{jsonData.last_name}} <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#">Account Manager</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a><button (click)="logOut()">Logout</button></a></li>
+                    </ul>
+                </li>
+                <!-- <li class="userphoto" style="background-color: blueviolet;">
+                   <img src="../../../assets/images/guest-user.jpg" class = "img" alt="">
+                </li> -->
+            </ul>
+        </div> <!-- class="box" -->
+    </div> <!-- class="container" -->
+</div>

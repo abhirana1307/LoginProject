@@ -12,6 +12,9 @@ export class HttpService {
   ) {}
 
   postData(api:any,data:any){
-    return this.httpClient.post(environment.baseUrl+api, data)
+    return this.httpClient.post(environment.baseUrl+api, data);
   } 
+  // getData(api: any, data: any){
+  //   return this.httpClient.get(environment.baseUrl+api, data);
+  // }
 }
